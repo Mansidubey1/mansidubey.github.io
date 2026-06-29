@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansi Dubey | UI/UX Designer & Front-End Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mansi Dubey - UI/UX Design Intern Candidate and B.Tech CSE Student at IIIT Manipur. Explorer of Design Systems, Figma, and Front-End Development.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Gradients -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header glass">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-text">Mansi<span class="accent-dot">.</span>Dubey</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#design-system-widget" class="nav-link">Design System Sandbox</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="mailto:mans240101093@iiitmanipur.ac.in" class="btn btn-sm btn-outline contact-btn-top">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-tag animate-item">UI/UX Design Intern Candidate</div>
+      <h1 class="hero-title animate-item">
+        Bridging the gap between <span class="gradient-text">Aesthetics</span> & <span class="gradient-text-alt">Implementation</span>.
+      </h1>
+      <p class="hero-desc animate-item">
+        Hi, I'm Mansi Dubey. A Computer Science student at IIIT Manipur specializing in Figma design systems, visual hierarchy, and front-end code translation. Looking to design clean, interactive interfaces—particularly in finance and fintech.
+      </p>
+      
+      <div class="hero-ctas animate-item">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="mailto:mans240101093@iiitmanipur.ac.in" class="btn btn-secondary">Get In Touch</a>
+      </div>
+
+      <div class="hero-socials animate-item">
+        <a href="mailto:mans240101093@iiitmanipur.ac.in" class="social-icon-link" aria-label="Email Mansi">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>mans240101093@iiitmanipur.ac.in</span>
+        </a>
+        <a href="tel:+919644134765" class="social-icon-link" aria-label="Call Mansi">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+91 96441 34765</span>
+        </a>
+        <a href="https://github.com/Mansidubey1" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Mansi's GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>github.com/Mansidubey1</span>
+        </a>
+        <a href="https://linkedin.com/in/mansidubey" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Mansi's LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span>linkedin.com/in/mansidubey</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Profile Info Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="about-visual">
+          <div class="about-glow-card glass">
+            <div class="design-code-concept">
+              <div class="design-circle">Figma <span class="subtext">Design</span></div>
+              <div class="code-bracket">&lt;/&gt; <span class="subtext">Code</span></div>
+              <div class="bridge-line"></div>
+            </div>
+            <div class="about-card-info">
+              <h3>Design to Dev Hand-off</h3>
+              <p>Because I code, I build specs with exact auto-layout settings, variable naming tokens, and component properties that fit developer workflows perfectly.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-text">
+          <div class="section-badge">My Profile</div>
+          <h2 class="section-title">Design Thinking Powered by CS Foundations</h2>
+          <p>
+            I am a Computer Science student at IIIT Manipur who fell in love with UI/UX Design. Rather than separating code and design, I use my technical background to build systems that look stunning and are structurally sound.
+          </p>
+          <p>
+            My current efforts focus on mastering Figma auto-layouts, variations, and creating end-to-end design systems. I am seeking a UI/UX design internship where I can apply user-centered design methodologies to actual digital products, particularly within dense data environments like financial platforms and transaction portals.
+          </p>
+          <div class="focus-bullets">
+            <div class="focus-bullet-item">
+              <span class="bullet-icon">🎨</span>
+              <div>
+                <strong>Design System Alignment:</strong> Fluent in grid configurations, typographic variables, and creating highly structured UI libraries.
+              </div>
+            </div>
+            <div class="focus-bullet-item">
+              <span class="bullet-icon">💻</span>
+              <div>
+                <strong>Front-End Understanding:</strong> Understanding flex layouts, box models, and responsive grids makes my designs easy to translate into code.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Timeline -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-badge">Professional Background</div>
+      <h2 class="section-title text-center">My Industry Experience</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item glass">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">June 2026 – Present</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Tech Intern</h3>
+                <h4 class="company-name">Supergoat Technologies Pvt. Ltd.</h4>
+              </div>
+              <span class="work-tag">Remote</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Contributed to front-end development tasks using HTML, CSS, and JavaScript on live product pages.</li>
+              <li>Picked up small front-end fixes and improvements across the codebase, gaining early exposure to working within an existing product and team workflow.</li>
+              <li>Analyzed user flows and responsive states during front-end adjustments, helping align developer outputs with UI designer mockups.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Design System Explorer Widget -->
+  <section class="section design-system-section" id="design-system-widget">
+    <div class="container">
+      <div class="section-badge">Figma to Frontend Translation</div>
+      <h2 class="section-title">Design System Sandbox</h2>
+      <p class="section-desc">
+        As a designer who builds design systems, I understand how color tokens, spacing scales, and rounded borders translate directly into code. Interact with the sandbox below to see how our design system tokens adapt live:
+      </p>
+
+      <div class="sandbox-grid glass">
+        <!-- Sandbox Control Panel -->
+        <div class="sandbox-controls">
+          <h3>Design System Tokens</h3>
+          
+          <div class="control-group">
+            <span class="control-label">Primary Color Token</span>
+            <div class="control-options colors">
+              <button class="token-btn color-token active" data-color="#10b981" style="background-color: #10b981;" aria-label="Emerald Mint"></button>
+              <button class="token-btn color-token" data-color="#6366f1" style="background-color: #6366f1;" aria-label="Royal Indigo"></button>
+              <button class="token-btn color-token" data-color="#ec4899" style="background-color: #ec4899;" aria-label="Cyberpunk Pink"></button>
+              <button class="token-btn color-token" data-color="#f59e0b" style="background-color: #f59e0b;" aria-label="Amber gold"></button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Border Radius Token (Component Rounding)</span>
+            <div class="control-options border-radius">
+              <button class="token-btn val-token active" data-radius="12px">Rounded (12px)</button>
+              <button class="token-btn val-token" data-radius="4px">Compact (4px)</button>
+              <button class="token-btn val-token" data-radius="32px">Pill (32px)</button>
+              <button class="token-btn val-token" data-radius="0px">Sharp (0px)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Card Padding (Grid Spacing)</span>
+            <div class="control-options padding">
+              <button class="token-btn val-token active" data-padding="24px">Standard (24px)</button>
+              <button class="token-btn val-token" data-padding="14px">Compact (14px)</button>
+              <button class="token-btn val-token" data-padding="38px">Loose (38px)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Typographic Size Scale</span>
+            <div class="control-options text-scale">
+              <button class="token-btn val-token active" data-font="1rem">Base (16px)</button>
+              <button class="token-btn val-token" data-font="0.875rem">Compact (14px)</button>
+              <button class="token-btn val-token" data-font="1.15rem">Large (18px)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sandbox Showcase Area -->
+        <div class="sandbox-preview">
+          <div class="preview-tag">Figma Component Preview</div>
+          
+          <!-- Mock Card -->
+          <div class="mock-card" id="sandboxCard">
+            <div class="mock-card-header">
+              <span class="mock-badge" id="sandboxBadge">Active Token</span>
+              <span class="mock-date">Today's Spec</span>
+            </div>
+            <h4 class="mock-title">Interactive Dashboard Card</h4>
+            <p class="mock-text">
+              This card adapts its margins, border-radius, font-sizes, and background highlights instantly as you toggle token states in the control panel.
+            </p>
+            <div class="mock-divider"></div>
+            <div class="mock-footer">
+              <button class="mock-btn-primary" id="sandboxButton">Primary Component Action</button>
+              <button class="mock-btn-secondary">Outline View</button>
+            </div>
+          </div>
+
+          <!-- Code Token Speccing Out -->
+          <div class="mock-spec-panel">
+            <h4>Live CSS Variables Hand-off</h4>
+            <pre class="spec-code-block"><code>:root {
+  --primary-accent: <span id="specColor">#10b981</span>;
+  --border-radius: <span id="specRadius">12px</span>;
+  --card-padding: <span id="specPadding">24px</span>;
+  --font-base-size: <span id="specFont">1rem</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-badge">Case Studies & Practicums</div>
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-desc">A showcase of design deliverables, front-end structures, and design system components:</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass">
+          <div class="project-image-wrapper">
+            <img src="assets/design_system.jpg" alt="Figma Component Library & Design System" class="project-image">
+            <div class="project-overlay-type">Figma & UI/UX</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-card-title">Figma Component Library & Design System</h3>
+            <p class="project-text">
+              Created a comprehensive, structured Figma UI design system. Established typography scales, custom HSL color palettes, standard spacing rules, and robust variant components (buttons, input fields, and layouts) with clear naming tokens for developers.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Design System</span>
+              <span class="tech-tag">Figma Variants</span>
+              <span class="tech-tag">Auto-Layout</span>
+              <span class="tech-tag">Design-to-Dev Handoff</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass">
+          <div class="project-image-wrapper">
+            <img src="assets/edtech_ui.jpg" alt="EdTech App Design" class="project-image">
+            <div class="project-overlay-type">Figma Concept</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-card-title">EdTech App UI Flow Design</h3>
+            <p class="project-text">
+              Designed an end-to-end user flow for a learning application, map-routing course browsing screens, interactive progress boards, and interactive exam/quiz states. Focused on spacing density, readable visual paths, and consistent UI components.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Figma Prototyping</span>
+              <span class="tech-tag">User Flows</span>
+              <span class="tech-tag">Information Architecture</span>
+              <span class="tech-tag">Mobile UI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass">
+          <div class="project-image-wrapper">
+            <img src="assets/responsive_web.jpg" alt="Responsive Web Application" class="project-image">
+            <div class="project-overlay-type">Front-End Development</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-card-title">Responsive Web Layout Library</h3>
+            <p class="project-text">
+              Built customizable, fully responsive web layouts using semantic HTML5 and layout rules (CSS Grid and Flexbox). Focused on optimization, asset rendering performance, accessibility compliance, and clean code documentation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3 (Grid/Flexbox)</span>
+              <span class="tech-tag">Vanilla JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass">
+          <div class="project-image-wrapper">
+            <img src="assets/ui_practice.jpg" alt="Figma UI Practice" class="project-image">
+            <div class="project-overlay-type">UI Exploration</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-card-title">Figma UI Practice & Spec Refactoring</h3>
+            <p class="project-text">
+              A repository of redesigned mobile and web layouts. Focused on recreating interface elements from major fintech and productivity designs to practice absolute alignment, grid constraints, dynamic component variants, and visual consistency.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">UI Copying & Practice</span>
+              <span class="tech-tag">Figma Components</span>
+              <span class="tech-tag">Layout Constraints</span>
+              <span class="tech-tag">Visual Consistency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-badge">Toolbox & Frameworks</div>
+      <h2 class="section-title text-center">Skills & Capabilities</h2>
+      <p class="section-desc text-center">The core technologies, tools, and methodologies that I practice:</p>
+
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card glass">
+          <div class="skill-icon">🎨</div>
+          <h3>Design Tools & Systems</h3>
+          <p>Advanced Figma (Auto-layout, variables, interactive component variants, complex prototyping states), responsive UI kits, grids, and style guidelines.</p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card glass">
+          <div class="skill-icon">📏</div>
+          <h3>UI/UX Foundations</h3>
+          <p>User-centered research, information hierarchies, wireframe sketching, visual layout layouts, composition guidelines, typography scaling, and dynamic styling.</p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card glass">
+          <div class="skill-icon">💻</div>
+          <h3>Front-End Coding</h3>
+          <p>Semantic HTML5 structure, modern CSS (Flexbox, Grid, custom properties, animations), clean Vanilla JavaScript (DOM manipulation, asynchronous functions).</p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card glass">
+          <div class="skill-icon">🤝</div>
+          <h3>Git & Collaboration</h3>
+          <p>Familiar with Git flow, pull requests, repository versioning, and using GitHub to package design specifications for developer handoffs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Education column -->
+        <div class="education-block">
+          <div class="section-badge">Academic Timeline</div>
+          <h2 class="section-title">Education</h2>
+          
+          <div class="edu-timeline">
+            <div class="edu-item glass">
+              <div class="edu-header">
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <span class="edu-date">2024 – 2028</span>
+              </div>
+              <h4 class="edu-school">IIIT Senapati, Manipur</h4>
+              <p class="edu-score">CGPA: <strong>7.5 / 10</strong></p>
+            </div>
+
+            <div class="edu-item glass">
+              <div class="edu-header">
+                <h3>Higher Secondary (XII) – PCM</h3>
+                <span class="edu-date">2023</span>
+              </div>
+              <h4 class="edu-school">Sanskar Public Academy, MP Board</h4>
+              <p class="edu-score">Result: <strong>First Division (413 / 500)</strong></p>
+            </div>
+
+            <div class="edu-item glass">
+              <div class="edu-header">
+                <h3>Secondary (X)</h3>
+                <span class="edu-date">2021</span>
+              </div>
+              <h4 class="edu-school">St. George's Convent High School, CBSE</h4>
+              <p class="edu-score">Result: <strong>94.2% (A1 Grade)</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications column -->
+        <div class="certifications-block">
+          <div class="section-badge">Self Improvement</div>
+          <h2 class="section-title">Certifications & Extra Learning</h2>
+          <p class="certs-intro">Committed to continuous growth, I leverage my CS background to stay updated on emerging technologies:</p>
+          
+          <div class="certs-list">
+            <div class="cert-item glass">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div>
+                <h4>MATLAB Onramp</h4>
+                <p class="cert-issuer">MathWorks</p>
+              </div>
+            </div>
+
+            <div class="cert-item glass">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+              </div>
+              <div>
+                <h4>Artificial Intelligence MasterClass</h4>
+                <p class="cert-issuer">Pantech.ai</p>
+              </div>
+            </div>
+
+            <div class="cert-item glass">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div>
+                <h4>Build Your Own ChatGPT with Open-Source LLMs</h4>
+                <p class="cert-issuer">Lets Upgrade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <footer class="footer-section" id="contact">
+    <div class="container">
+      <div class="footer-glow"></div>
+      
+      <div class="footer-content">
+        <div class="section-badge">Get In Touch</div>
+        <h2 class="footer-title">Let's build something exceptional together.</h2>
+        <p class="footer-desc">
+          I am currently looking for UI/UX Design Internships starting summer 2026. If you're looking for a design intern who speaks developer, let's connect!
+        </p>
+
+        <div class="footer-links-grid">
+          <a href="mailto:mans240101093@iiitmanipur.ac.in" class="footer-link-card glass">
+            <span class="link-icon">✉️</span>
+            <div>
+              <span class="link-label">Email Me</span>
+              <span class="link-val">mans240101093@iiitmanipur.ac.in</span>
+            </div>
+          </a>
+          <a href="tel:+919644134765" class="footer-link-card glass">
+            <span class="link-icon">📞</span>
+            <div>
+              <span class="link-label">Call/Message</span>
+              <span class="link-val">+91-9644134765</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/mansidubey" target="_blank" rel="noopener noreferrer" class="footer-link-card glass">
+            <span class="link-icon">🔗</span>
+            <div>
+              <span class="link-label">LinkedIn Connection</span>
+              <span class="link-val">linkedin.com/in/mansidubey</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Mansi Dubey. Built with HTML5, CSS3, & JS.</p>
+          <div class="footer-sub-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/Mansidubey1" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
